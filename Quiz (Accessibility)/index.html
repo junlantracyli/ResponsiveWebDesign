@@ -43,8 +43,8 @@
                     <fieldset class="question" name="question-one">
                         <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
                         <ul class="answers-list">
-                            <li><label for="q1-a1"><input type="radio" id="q1-a1" value="true"/>True</label></li>
-                            <li><label for="q1-a2"><input type="radio" id="q1-a2" value="false"/>False</label></li>
+                            <li><label for="q1-a1"><input type="radio" id="q1-a1" name="q1" value="true"/>True</label></li>
+                            <li><label for="q1-a2"><input type="radio" id="q1-a2" name="q1" value="false"/>False</label></li>
                         </ul>
                     </fieldset>
                 </div>
@@ -54,17 +54,43 @@
                         <legend>A label element nesting an input element is required to have a
                             for attribute with the same value as the input's id</legend>
                         <ul class="answers-list">
-                            <li><label for="q2-a1"><input type="radio" id="q2-a1" value="true"/>True</label></li>
-                            <li><label for="q2-a2"><input type="radio" id="q2-a2" value="false"/>False</label></li>
+                            <li><label for="q2-a1"><input type="radio" id="q2-a1" name="q2" value="true"/>True</label></li>
+                            <li><label for="q2-a2"><input type="radio" id="q2-a2" name="q2" value="false"/>False</label></li>
                         </ul>
                     </fieldset>
                 </div>
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS Questions</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="select">Can the CSS margin property accept negative values?</label>
+                    </div>
+                    <div class="answer">
+                        <select required id="select" name="dropdown">
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="text-area">Do you have any questions:</label>
+                    </div>
+                    <div class="answer">
+                        <textarea id="text-area" name="paragraph" placeholder="Who is flexbox..." rows="5" cols="24"></textarea>
+                    </div>
+                </div>
             </section>
-        </form>
-        
+            <button type="submit">Send</button>
+        </form>        
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />          
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 </body>
 </html>
