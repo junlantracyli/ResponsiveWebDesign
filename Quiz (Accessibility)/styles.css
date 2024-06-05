@@ -33,9 +33,20 @@ main{
     padding-top:40px;
 }
 
+section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+}
+
 nav>ul{
     display:flex;
     justify-content:space-evenly;
+    flex-wrap:wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
 }
 
 nav li{
@@ -51,6 +62,12 @@ h1,h2 {
 
 h2 {
     border-bottom: 4px solid #dfdfe2;
+    margin-top:0;
+    padding-top:60px;
+}
+
+.info{
+    padding:10px 0 0 5px;
 }
 
 .sr-only{
